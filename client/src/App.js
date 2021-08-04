@@ -1,11 +1,15 @@
 import "./App.css";
+import TopBar from "./TopBar";
+import Videos from "./Videos";
+
+import myVideos from "./exampleresponse.json";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Video Recommendation</h1>
-      </header>
+    <div>
+      <TopBar />
+      <Videos myVideos={ myVideos}/>
     </div>
   );
 }
