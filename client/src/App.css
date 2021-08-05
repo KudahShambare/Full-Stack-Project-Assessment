@@ -2,6 +2,7 @@
 *{
 /*  height: 100vh;*/
   width: 100vw;
+  background:radial-gradient(red,blue)
 }
 /*Top Bar*/
 #top-bar{
@@ -9,6 +10,17 @@
   font-size: xx-large;
   font-weight: bolder;
   background: radial-gradient(red,blue);
-  height: 20%;
+/*  height: 20%;*/
   padding: 5% 0 2%;
+  
+}
+/*Videos*/
+#video-container{
+background: radial-gradient(blue,red);
+
+}
+h6{
+  font-size: x-large;
+  color: beige;
+  text-align: center;
 }
