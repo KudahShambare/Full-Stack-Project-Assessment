@@ -1,18 +1,30 @@
 /*Page Layout*/
 *{
-/*  height: 100vh;*/
   width: 100vw;
-  background:radial-gradient(red,blue)
 }
 /*Top Bar*/
 #top-bar{
+  color: greenyellow;
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
   background: radial-gradient(red,blue);
-/*  height: 20%;*/
   padding: 5% 0 2%;
   
+}
+/*Input*/
+#add-video{
+  margin-top: 3%;
+}
+h2{
+  text-align: center;
+  color:rgb(228, 20, 72);
+}
+input{
+  background-color: aliceblue;
+  width: 30%;
+  margin-left: 10%;
+  text-align: center;
 }
 /*Videos*/
 #video-container{
@@ -23,4 +35,17 @@ h6{
   font-size: x-large;
   color: beige;
   text-align: center;
+}
+p{
+  color: beige;
+  margin-left:5% ;
+}
+button{
+  background-color: black;
+  color: greenyellow;
+  font-size: larger;
+  font-weight: bolder;
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
 }

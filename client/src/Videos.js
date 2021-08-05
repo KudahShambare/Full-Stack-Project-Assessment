@@ -1,13 +1,7 @@
 import React from "react";
-import Youtube from "react-youtube";
+import ReactPlayer from "react-player";
+import DeleteButton from "./DeleteButton";
 
-const options = {
-    height: '390',
-    width: '480',
-    playerVars: {
-        autoplay:1
-    }
-}
 
 function Videos(props) {
   return (
@@ -15,11 +9,12 @@ function Videos(props) {
       {props.myVideos.map((vid) => {
           return <div key={vid.id}>
               <h6>
-                  {vid.title}
+                  {vid.title} (Rating:{vid.rating})
               </h6>
-              <Youtube videoId={vid.url} opts={options} />
+            <ReactPlayer url={ vid.url} controls="true"/>
               <p> Likes <span id="total-likes">     </span>  Dislikes<span id="total-dislikes"></span></p>
-        </div>
+       <DeleteButton/>
+          </div>
 
       })}
     </div>
